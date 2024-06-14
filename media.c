@@ -2,13 +2,18 @@
 #include <math.h>
 
 int main() {
-    int n = 5;  // Numero di numeri da inserire (puoi cambiarlo se vuoi)
+    int n ;   
+    // Numero di numeri da inserire da tastiera da parte dell'utente
+    printf("Scegli il numero di quanti numeri si deve fare la media, che non siano meno di tre: ");
+    scanf("%d", &n);
+    
     double numeri[n];
     double somma = 0.0;
     double media;
     int media_arrotondata;
-
+    
     // Inserimento dei numeri
+   
     printf("Inserisci %d numeri reali:\n", n);
     for(int i = 0; i < n; i++) {
         printf("Numero %d: ", i + 1);
